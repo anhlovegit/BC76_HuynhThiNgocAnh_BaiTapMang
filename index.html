@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài Tập Mảng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <h1 class="text-center bg-black text-white py-1">Bài Tập Mảng</h1>
+    <div class="container">
+        <div class="mb-3">
+            <input type="number" class="form-control mt-5" name="" id="soN" aria-describedby="helpId"
+                placeholder="nhập số n" />
+            <br>
+            <button class="btn btn-primary mb-4">Thêm số</button>
+
+            <div class="alert alert-success py-4" role="alert" id="themSo"></div>
+
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1️⃣ Tổng số dương
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="tongSoDuong">Tính tổng</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaTongSoDuong"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2️⃣ Đếm số dương
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="demSo">Đếm số</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaDemSoDuong"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3️⃣ Tìm số nhỏ nhất
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="timSoNhoNhat">Tìm số nhỏ nhất </button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaSoNhoNhat"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        4️⃣ Tìm số dương nhỏ nhất
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="timSoDuongNhoNhat">Tìm số dương nhỏ nhất</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaSoDuongNhoNhat"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        5️⃣ Tìm số chẵn cuối cùng
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="timSoChan">Tìm số chẵn</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaSoChanCuoiCung"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        6️⃣ Đổi chỗ
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <input type="text" class="form-control my-2" name="" id="soViTri1" aria-describedby="helpId"
+                            placeholder="nhập số vị trí 1 " />
+                        <input type="text" class="form-control my-2" name="" id="soViTri2" aria-describedby="helpId"
+                            placeholder="nhập số vị trí 2 " />
+                        <button class="btn btn-dark mb-2" id="doiCho">Đổi Chỗ</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaDoiCho"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        7️⃣ Sắp xếp tăng dần
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="sapXep">Sắp xếp</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaSapXep"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        8️⃣ Tìm số nguyên tố đầu tiên
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="timSoNguyenTo">Tìm số nguyên tố đầu tiên</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaSoNguyenTo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        9️⃣ Đếm số nguyên
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <input type="number" class="form-control mt-2" name="" id="soNguyen"
+                                aria-describedby="helpId" placeholder="nhập số" />
+                            
+                            <button class="btn btn-warning my-4">Thêm số</button>
+                            <div class="alert alert-info"></div>
+                        </div>
+                        <button class="btn btn-dark mb-2" id="demSoNguyen">Đếm số nguyên</button>
+
+                        <div div class="alert alert-success p-3" role="alert" id="ketQuaDemSoNguyen"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        🔟 So Sánh số lượng số âm và dương
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <button class="btn btn-dark mb-2" id="soSanh">So sánh</button>
+
+                        <div div class="alert alert-success" role="alert" id="ketQuaSoAmDuong"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
